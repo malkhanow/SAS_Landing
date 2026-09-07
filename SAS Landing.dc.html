@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+    a{color:inherit;text-decoration:none}
+    ::selection{background:#cfd6f2;color:#171a24}
+    @container (max-width:700px){
+      [data-nav]{min-height:64px!important;padding:10px 0!important}
+      [data-nav-links]{gap:8px!important}
+      [data-hide-sm]{display:none!important}
+      [data-cta-sm]{padding:11px 16px!important;font-size:14px!important}
+      [data-nav-link]{padding:6px 10px!important;font-size:13px!important}
+    }
+    @container (max-width:460px){
+      [data-nav]{justify-content:center!important}
+      [data-nav-links]{width:100%;justify-content:space-between!important;gap:6px!important}
+      [data-cta-sm]{padding:10px 14px!important;font-size:13px!important}
+    }
+    @container (max-width:400px){
+      [data-nav-link]{padding:4px 7px!important;font-size:12px!important}
+      [data-cta-sm]{padding:9px 13px!important;font-size:12px!important;gap:6px!important}
+    }
+  </style>
+</helmet>
+<div style="container-type:inline-size;overflow-x:clip;background:radial-gradient(1100px 550px at 12% -10%,#dde6fb 0%,transparent 60%),radial-gradient(900px 500px at 100% 8%,#e6ecff 0%,transparent 55%),#f4f6fd;color:#171a24;line-height:1.5;font-size:16px">
+
+  <div style="position:sticky;top:0;z-index:50;background:#f4f6fdb3;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid #ffffffb3">
+    <div style="width:min(1160px,calc(100% - 40px));margin:auto">
+      <nav data-nav style="min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+        <a href="#top" style="font-weight:900;letter-spacing:-.07em;font-size:28px">SAS<i style="font-style:normal;color:#1F3A93">.</i></a>
+        <div data-nav-links style="display:flex;align-items:center;gap:22px;flex-wrap:wrap">
+          <a data-nav-link href="#tariffs" style="font-weight:700;font-size:14px;padding:8px 16px;border-radius:100px;border:1px solid transparent;transition:background .25s,border-color .25s" style-hover="background:#e6ecff;border-color:#c7d3f7">Тарифы</a>
+          <a data-nav-link href="#faq" style="font-weight:700;font-size:14px;padding:8px 16px;border-radius:100px;border:1px solid transparent;transition:background .25s,border-color .25s" style-hover="background:#e6ecff;border-color:#c7d3f7">Вопросы</a>
+          <a data-hide-sm href="#contact-form" style="display:inline-flex;align-items:center;gap:10px;padding:14px 21px;border-radius:100px;border:1px solid #1F3A9333;color:#1F3A93;font-weight:750;transition:background .25s" style-hover="background:#e6ecff">Оставить заявку</a>
+          <a data-cta-sm href="https://docs.google.com/forms/d/e/1FAIpQLSfsLU10BCvi8zrXi5_aAPyzKfMKOG3e1FG6udNLLWYkIs1rWQ/viewform" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;padding:14px 21px;border-radius:100px;background:linear-gradient(135deg,#2b46b0,#1F3A93);color:#fff;font-weight:750;box-shadow:0 8px 20px #1f3a9340">Заполнить бриф <span>→</span></a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <main id="top">
+    <div style="width:min(1160px,calc(100% - 40px));margin:auto;padding:clamp(36px,6vw,72px) 0 50px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(28px,4vw,46px);align-items:center">
+      <div>
+        <div style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#4c5a78">Smart Automation System</div>
+        <h1 style="font-size:clamp(40px,6vw,74px);line-height:1.08;letter-spacing:-.07em;margin:12px 0 25px;max-width:760px">Соцсети <em style="font-style:normal;background:#cfd6f2;padding:0 .08em">публикуются сами</em>, пока вы занимаетесь бизнесом.</h1>
+        <p style="font-size:19px;color:#5b6478;max-width:590px;margin:0 0 30px">SAS настраивает контент-систему под ваш голос: пишет посты, подбирает фото и публикует их в Telegram с автоматическим кросспостингом в VK и MAX.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsLU10BCvi8zrXi5_aAPyzKfMKOG3e1FG6udNLLWYkIs1rWQ/viewform" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;padding:15px 21px;border-radius:100px;background:linear-gradient(135deg,#2b46b0,#1F3A93);color:#fff;font-weight:750;box-shadow:0 10px 26px #1f3a9345">Заполнить бриф <span>→</span></a>
+          <a href="#video" style="display:inline-flex;align-items:center;gap:10px;padding:15px 21px;border-radius:100px;background:#ffffff8c;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid #ffffffcc;color:#171a24;font-weight:750">Смотреть видео ↓</a>
+        </div>
+        <div style="display:flex;gap:18px;align-items:center;margin-top:30px;font-size:13px;color:#5b6478;flex-wrap:wrap">
+          <div style="display:flex">
+            <b style="display:grid;place-items:center;margin-right:-7px;border:2px solid #f4f6fd;width:31px;height:31px;border-radius:50%;background:#cfd6f2;font-size:11px">AI</b>
+            <b style="display:grid;place-items:center;margin-right:-7px;border:2px solid #f4f6fd;width:31px;height:31px;border-radius:50%;background:#cfd6f2;font-size:11px">VK</b>
+            <b style="display:grid;place-items:center;margin-right:-7px;border:2px solid #f4f6fd;width:31px;height:31px;border-radius:50%;background:#cfd6f2;font-size:11px">TG</b>
+          </div>
+          <span>Один понятный процесс<br>для регулярного присутствия</span>
+        </div>
+      </div>
+      <div style="position:relative">
+        <div style="position:absolute;width:220px;height:220px;background:#3b57d9;filter:blur(70px);opacity:.45;border-radius:50%;right:-40px;top:-50px;pointer-events:none"></div>
+        <div style="position:relative;background:linear-gradient(160deg,#0b1130 0%,#16215c 55%,#1F3A93 100%);border-radius:30px;min-height:420px;overflow:hidden;border:1px solid #ffffff26;box-shadow:0 25px 55px #0f204d40">
+          <video ref="{{ heroVideoRef }}" autoplay="true" muted="true" loop="true" playsinline="true" preload="auto" poster="assets/bg-workflow.png" style="width:100%;height:100%;min-height:420px;object-fit:cover;display:block">
+            <source src="assets/hero.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <section id="video" style="position:relative;overflow:hidden;padding:86px 0;background:linear-gradient(165deg,#0b1130 0%,#182463 45%,#1F3A93 100%);color:#fff">
+      <div style="position:absolute;width:420px;height:420px;background:#3b57d9;filter:blur(110px);opacity:.35;border-radius:50%;left:-120px;top:-140px;pointer-events:none"></div>
+      <div style="position:absolute;width:360px;height:360px;background:#6b7fe0;filter:blur(110px);opacity:.3;border-radius:50%;right:-100px;bottom:-140px;pointer-events:none"></div>
+      <div style="position:relative;width:min(1160px,calc(100% - 40px));margin:auto">
+        <div style="max-width:640px;margin:0 auto 32px;text-align:center">
+          <div style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#cfd6f2">Начните отсюда</div>
+          <h2 style="font-size:clamp(30px,4vw,48px);line-height:1.05;letter-spacing:-.06em;margin:9px 0 14px">5 минут — и вопросов не останется.</h2>
+          <p style="color:#dbe2f7;font-size:17px;margin:0">Я лично рассказываю, как работает система, что входит в каждый тариф и как всё выглядит на практике. Досмотрите до конца — дальше решать будет намного проще.</p>
+        </div>
+        <div style="max-width:820px;margin:0 auto;padding:14px;border-radius:28px;background:#ffffff14;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid #ffffff2e;box-shadow:0 30px 60px #0f204d55">
+          <div style="position:relative;border-radius:18px;overflow:hidden;aspect-ratio:16/9">
+            <iframe src="https://vkvideo.ru/video_ext.php?oid=-241328702&id=456239017&hash=3c4531122a1beb91&hd=3" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:32px">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsLU10BCvi8zrXi5_aAPyzKfMKOG3e1FG6udNLLWYkIs1rWQ/viewform" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;padding:18px 34px;border-radius:100px;background:#fff;color:#1F3A93;font-weight:800;font-size:17px;box-shadow:0 14px 34px #05081f66;transition:transform .3s cubic-bezier(.22,1.6,.36,1),box-shadow .3s" style-hover="transform:translateY(-4px) scale(1.03);box-shadow:0 18px 40px #05081f80">Заполнить бриф <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" style="padding:86px 0">
+      <div style="width:min(1160px,calc(100% - 40px));margin:auto">
+        <div style="max-width:720px;margin-bottom:38px">
+          <div style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#4c5a78">Без хаоса и ручной рутины</div>
+          <h2 style="font-size:clamp(30px,4vw,50px);line-height:1.03;letter-spacing:-.06em;margin:9px 0 14px">Контент — это система, а не вечный поиск темы «на сегодня».</h2>
+          <p style="color:#5b6478;font-size:18px;margin:0">Настраиваем процесс один раз — дальше он держит регулярность в выбранном ритме без вашего участия.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px">
+          <article style="border:1px solid #ffffffb3;border-radius:18px;padding:22px;background:#ffffff85;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 8px 24px #1f3a9312">
+            <span style="display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#e3eaf9;font-weight:800;font-size:13px">01</span>
+            <h3 style="margin:22px 0 7px;font-size:19px;letter-spacing:-.03em">Разбираем бизнес</h3>
+            <p style="margin:0;color:#5b6478;font-size:14px">Собираем бриф, задачи, тон общения и ограничения.</p>
+          </article>
+          <article style="border:1px solid #ffffffb3;border-radius:18px;padding:22px;background:#ffffff85;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 8px 24px #1f3a9312">
+            <span style="display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#e3eaf9;font-weight:800;font-size:13px">02</span>
+            <h3 style="margin:22px 0 7px;font-size:19px;letter-spacing:-.03em">Настраиваем рубрики</h3>
+            <p style="margin:0;color:#5b6478;font-size:14px">Создаём темы, форматы и план публикаций под вашу нишу.</p>
+          </article>
+          <article style="border:1px solid #ffffffb3;border-radius:18px;padding:22px;background:#ffffff85;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 8px 24px #1f3a9312">
+            <span style="display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#e3eaf9;font-weight:800;font-size:13px">03</span>
+            <h3 style="margin:22px 0 7px;font-size:19px;letter-spacing:-.03em">Готовим контент</h3>
+            <p style="margin:0;color:#5b6478;font-size:14px">AI пишет в вашем стиле, система подбирает фото из вашей библиотеки.</p>
+          </article>
+          <article style="border:1px solid #ffffffb3;border-radius:18px;padding:22px;background:#ffffff85;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 8px 24px #1f3a9312">
+            <span style="display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#e3eaf9;font-weight:800;font-size:13px">04</span>
+            <h3 style="margin:22px 0 7px;font-size:19px;letter-spacing:-.03em">Публикуем</h3>
+            <p style="margin:0;color:#5b6478;font-size:14px">Пост выходит в Telegram и кросспостится в VK и MAX.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section style="position:relative;overflow:hidden;padding:86px 0;background:linear-gradient(170deg,#0b1130 0%,#141d4d 50%,#10182c 100%);color:#f8fcf4">
+    <div style="position:absolute;inset:0;background-image:url('assets/bg-workflow.png');background-size:cover;background-position:center"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(170deg,#0b1130e6 0%,#141d4dd9 50%,#10182cf0 100%);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)"></div>
+    <div style="position:absolute;width:380px;height:380px;background:#3b57d9;filter:blur(120px);opacity:.3;border-radius:50%;right:-100px;top:-120px;pointer-events:none"></div>
+    <div style="position:relative;width:min(1160px,calc(100% - 40px));margin:auto">
+      <div style="max-width:720px;margin-bottom:38px">
+        <div style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#cfd6f2">Для малого бизнеса</div>
+        <h2 style="font-size:clamp(30px,4vw,50px);line-height:1.03;letter-spacing:-.06em;margin:9px 0 14px">Регулярно быть на виду — без отдельного контент-отдела.</h2>
+        <p style="color:#c0cbe0;font-size:18px;margin:0">Система берёт на себя повторяющийся процесс, но не превращает ленту в безликий поток постов.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px">
+        <article style="padding:24px;border:1px solid #ffffff2e;border-radius:16px;background:#ffffff14;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)">
+          <div style="width:44px;height:44px"><svg viewBox="0 0 24 24" fill="none" stroke="#8fb4ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h9A2.5 2.5 0 0 1 18 5.5v6A2.5 2.5 0 0 1 15.5 14H9l-3.5 3.5V14h-1A2.5 2.5 0 0 1 4 11.5z"/><path d="M7.5 9.5v-2M9.7 10.5v-4M11.9 9v-1M14.1 10.2v-3.4M16.3 8.7v-0.4"/></svg></div>
+          <h3 style="margin:19px 0 8px;font-size:20px">Ваш голос</h3>
+          <p style="color:#c3cde3;margin:0;font-size:14px">Стиль строится из брифа или ваших текстов — в зависимости от тарифа.</p>
+        </article>
+        <article style="padding:24px;border:1px solid #ffffff2e;border-radius:16px;background:#ffffff14;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)">
+          <div style="width:44px;height:44px"><svg viewBox="0 0 24 24" fill="none" stroke="#8fb4ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.2" y="5.2" width="11" height="11" rx="1.6"/><path d="M6.2 13.2l2.3-2.4 1.8 1.8 2-2.2"/><circle cx="6.6" cy="8.2" r="1" fill="#8fb4ff" stroke="none"/><path d="M16.2 7.8h1.4a1.6 1.6 0 0 1 1.6 1.6v8.8a1.6 1.6 0 0 1-1.6 1.6h-8.8a1.6 1.6 0 0 1-1.6-1.6v-1.4"/></svg></div>
+          <h3 style="margin:19px 0 8px;font-size:20px">Свои материалы</h3>
+          <p style="color:#c3cde3;margin:0;font-size:14px">Используются ваша фотобиблиотека, рубрики и праздничные даты.</p>
+        </article>
+        <article style="padding:24px;border:1px solid #ffffff2e;border-radius:16px;background:#ffffff14;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)">
+          <div style="width:44px;height:44px"><svg viewBox="0 0 24 24" fill="none" stroke="#8fb4ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="12" r="2.2"/><circle cx="18" cy="4.8" r="1.8"/><circle cx="18" cy="12" r="1.8"/><circle cx="18" cy="19.2" r="1.8"/><path d="M7.5 11L16.2 5.6M7.6 12h8.6M7.5 13L16.2 18.4"/></svg></div>
+          <h3 style="margin:19px 0 8px;font-size:20px">Один процесс — три площадки</h3>
+          <p style="color:#c3cde3;margin:0;font-size:14px">Telegram становится базовой точкой публикации для VK и MAX.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="tariffs" style="padding:86px 0">
+    <div style="width:min(1160px,calc(100% - 40px));margin:auto">
+      <div style="max-width:720px;margin-bottom:38px">
+        <div style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#4c5a78">Выберите темп</div>
+        <h2 style="font-size:clamp(30px,4vw,50px);line-height:1.03;letter-spacing:-.06em;margin:9px 0 14px">Тариф под текущую задачу бизнеса.</h2>
+        <p style="color:#5b6478;font-size:18px;margin:0">Начните с регулярности и масштабируйте систему, когда контента нужно больше.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;align-items:stretch">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsLU10BCvi8zrXi5_aAPyzKfMKOG3e1FG6udNLLWYkIs1rWQ/viewform" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;cursor:pointer;transition:transform .6s cubic-bezier(.22,1.6,.36,1),box-shadow .6s cubic-bezier(.22,1.6,.36,1),background .3s;will-change:transform;border:1px solid #ffffffb3;border-radius:18px;padding:22px;background:#ffffff85;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);display:flex;flex-direction:column;box-shadow:0 8px 24px #1f3a9312" style-hover="background:linear-gradient(160deg,#cfd6f2cc,#7b8dc9b3);transform:translateY(-16px) scale(1.03);box-shadow:0 20px 44px #1f3a9330">
+          <div style="font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#1F3A93;min-height:18px">Для старта</div>
+          <h3 style="font-size:22px;letter-spacing:-.04em;margin:10px 0">СТАРТ</h3>
+          <div style="font-size:33px;font-weight:850;letter-spacing:-.06em">2 400 <small style="font-size:14px;letter-spacing:0;font-weight:600">₽ / мес.</small></div>
+          <p style="color:#5b6478;font-size:13px;min-height:62px">Регулярное присутствие без вашего участия.</p>
+          <ul style="padding:0;list-style:none;margin:5px 0 0;font-size:13px">
+            <li style="margin:8px 0">✓ 3 поста в неделю</li>
+            <li style="margin:8px 0">✓ Telegram, VK и MAX</li>
+            <li style="margin:8px 0">✓ 2 рубрики</li>
+          </ul>
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsLU10BCvi8zrXi5_aAPyzKfMKOG3e1FG6udNLLWYkIs1rWQ/viewform" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;cursor:pointer;position:relative;transition:transform .6s cubic-bezier(.22,1.6,.36,1),box-shadow .6s cubic-bezier(.22,1.6,.36,1);will-change:transform;border:1px solid #ffffffb3;border-radius:18px;padding:22px;background:linear-gradient(160deg,#cfd6f2cc,#7b8dc9b3);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);display:flex;flex-direction:column;transform:translateY(-10px);box-shadow:0 16px 36px #1f3a9330" style-hover="box-shadow:0 22px 48px #1f3a934a;transform:translateY(-18px) scale(1.03)">
+          <div style="position:absolute;top:-11px;right:18px;background:#171a24;color:#fff;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:5px 12px;border-radius:100px">Популярный</div>
+          <div style="font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#1F3A93;min-height:18px">Для роста</div>
+          <h3 style="font-size:22px;letter-spacing:-.04em;margin:10px 0">БИЗНЕС</h3>
+          <div style="font-size:33px;font-weight:850;letter-spacing:-.06em">6 900 <small style="font-size:14px;letter-spacing:0;font-weight:600">₽ / мес.</small></div>
+          <p style="color:#33425e;font-size:13px;min-height:62px">Ежедневные посты в вашем стиле.</p>
+          <ul style="padding:0;list-style:none;margin:5px 0 0;font-size:13px">
+            <li style="margin:8px 0">✓ 7 постов в неделю</li>
+            <li style="margin:8px 0">✓ Контент-план</li>
+            <li style="margin:8px 0">✓ 4 рубрики и визуал с логотипом</li>
+          </ul>
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsLU10BCvi8zrXi5_aAPyzKfMKOG3e1FG6udNLLWYkIs1rWQ/viewform" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;cursor:pointer;transition:transform .6s cubic-bezier(.22,1.6,.36,1),box-shadow .6s cubic-bezier(.22,1.6,.36,1),background .3s;will-change:transform;border:1px solid #ffffffb3;border-radius:18px;padding:22px;background:#ffffff85;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);display:flex;flex-direction:column;box-shadow:0 8px 24px #1f3a9312" style-hover="background:linear-gradient(160deg,#cfd6f2cc,#7b8dc9b3);transform:translateY(-16px) scale(1.03);box-shadow:0 20px 44px #1f3a9330">
+          <div style="font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#1F3A93;min-height:18px">Больше глубины</div>
+          <h3 style="font-size:22px;letter-spacing:-.04em;margin:10px 0">ПРЕМИУМ</h3>
+          <div style="font-size:33px;font-weight:850;letter-spacing:-.06em">11 900 <small style="font-size:14px;letter-spacing:0;font-weight:600">₽ / мес.</small></div>
+          <p style="color:#5b6478;font-size:13px;min-height:62px">Живая лента с вашим голосом и отчётом.</p>
+          <ul style="padding:0;list-style:none;margin:5px 0 0;font-size:13px">
+            <li style="margin:8px 0">✓ 10 постов в неделю</li>
+            <li style="margin:8px 0">✓ Стиль по вашим текстам</li>
+            <li style="margin:8px 0">✓ PDF-отчёт раз в месяц</li>
+          </ul>
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsLU10BCvi8zrXi5_aAPyzKfMKOG3e1FG6udNLLWYkIs1rWQ/viewform" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;cursor:pointer;transition:transform .6s cubic-bezier(.22,1.6,.36,1),box-shadow .6s cubic-bezier(.22,1.6,.36,1),background .3s;will-change:transform;border:1px solid #ffffffb3;border-radius:18px;padding:22px;background:#ffffff85;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);display:flex;flex-direction:column;box-shadow:0 8px 24px #1f3a9312" style-hover="background:linear-gradient(160deg,#cfd6f2cc,#7b8dc9b3);transform:translateY(-16px) scale(1.03);box-shadow:0 20px 44px #1f3a9330">
+          <div style="font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#1F3A93;min-height:18px">Индивидуально</div>
+          <h3 style="font-size:22px;letter-spacing:-.04em;margin:10px 0">МАКСИМУМ</h3>
+          <div style="font-size:33px;font-weight:850;letter-spacing:-.06em">от 19 900 <small style="font-size:14px;letter-spacing:0;font-weight:600">₽ / мес.</small></div>
+          <p style="color:#5b6478;font-size:13px;min-height:62px">Индивидуальная система для активной ленты.</p>
+          <ul style="padding:0;list-style:none;margin:5px 0 0;font-size:13px">
+            <li style="margin:8px 0">✓ До 2 постов в день</li>
+            <li style="margin:8px 0">✓ Свои рубрики и визуал</li>
+            <li style="margin:8px 0">✓ Отчёт + созвон</li>
+          </ul>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" style="position:relative;overflow:hidden;padding:86px 0">
+    <div style="position:absolute;width:400px;height:400px;background:#c7d3f7;filter:blur(100px);opacity:.6;border-radius:50%;left:-100px;top:20px;pointer-events:none"></div>
+    <div style="position:relative;width:min(1160px,calc(100% - 40px));margin:auto">
+      <div style="max-width:720px;margin-bottom:38px">
+        <div style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#4c5a78">Вопросы и ответы</div>
+        <h2 style="font-size:clamp(30px,4vw,50px);line-height:1.03;letter-spacing:-.06em;margin:9px 0 14px">Прежде чем начать сотрудничество.</h2>
+      </div>
+      <div style="display:grid;gap:12px;max-width:820px">
+        <sc-for list="{{ faqItems }}" as="item" hint-placeholder-count="6">
+          <div style="border:1px solid #ffffffb3;border-radius:16px;padding:20px 24px;background:#ffffff85;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);cursor:pointer" onClick="{{ item.toggle }}">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+              <span style="font-weight:750;font-size:17px;letter-spacing:-.02em">{{ item.q }}</span>
+            </div>
+            <div style="{{ item.wrapStyle }}">
+              <div style="{{ item.innerStyle }}">
+                <p style="margin:12px 0 0;color:#5b6478;font-size:15px">{{ item.a }}</p>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="request" style="padding:0 0 88px">
+    <div style="width:min(1160px,calc(100% - 40px));margin:auto">
+      <div style="position:relative;overflow:hidden;border-radius:26px;padding:clamp(28px,5vw,65px);background:linear-gradient(160deg,#16215c 0%,#1F3A93 55%,#2b46b0 100%);color:#fff">
+        <div style="position:absolute;width:300px;height:300px;background:#6b7fe0;filter:blur(90px);opacity:.4;border-radius:50%;right:-70px;top:-100px;pointer-events:none"></div>
+        <div style="position:absolute;width:260px;height:260px;background:#3b57d9;filter:blur(90px);opacity:.35;border-radius:50%;left:-80px;bottom:-100px;pointer-events:none"></div>
+        <div style="position:relative;border-radius:20px;padding:clamp(20px,3vw,32px);background:#ffffff14;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid #ffffff2e">
+          <div style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#cfd6f2">Первый шаг</div>
+          <h2 style="font-size:clamp(32px,4.7vw,58px);line-height:1.06;letter-spacing:-.07em;margin:10px 0;max-width:760px">Посмотрели видео — заполняйте бриф, и мы запустим ленту.</h2>
+          <p style="font-size:18px;max-width:600px;margin:0 0 28px;color:#dbe2f7">Бриф займёт пару минут: там и выбор тарифа, и всё, что нужно для настройки рубрик под ваш бизнес.</p>
+          <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsLU10BCvi8zrXi5_aAPyzKfMKOG3e1FG6udNLLWYkIs1rWQ/viewform" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;padding:15px 21px;border-radius:100px;background:#fff;color:#1F3A93;font-weight:750">Заполнить бриф <span>→</span></a>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;font-size:13px;font-weight:700">
+              <span style="background:#ffffff26;backdrop-filter:blur(10px);border:1px solid #ffffff33;border-radius:100px;padding:8px 14px">СТАРТ 2 400 ₽</span>
+              <span style="background:#ffffff26;backdrop-filter:blur(10px);border:1px solid #ffffff33;border-radius:100px;padding:8px 14px">БИЗНЕС 6 900 ₽</span>
+              <span style="background:#ffffff26;backdrop-filter:blur(10px);border:1px solid #ffffff33;border-radius:100px;padding:8px 14px">ПРЕМИУМ 11 900 ₽</span>
+              <span style="background:#ffffff26;backdrop-filter:blur(10px);border:1px solid #ffffff33;border-radius:100px;padding:8px 14px">МАКСИМУМ от 19 900 ₽</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact-form" style="margin-top:16px;position:relative;border-radius:24px;padding:clamp(28px,4vw,48px);background:linear-gradient(170deg,#0b1130 0%,#141d4d 50%,#10182c 100%);color:#f8fcf4;border:1px solid #ffffff2e;box-shadow:0 16px 40px #05081f40">
+        <div style="position:absolute;inset:0;border-radius:24px;overflow:hidden;pointer-events:none">
+          <div style="position:absolute;width:280px;height:280px;background:#3b57d9;filter:blur(100px);opacity:.3;border-radius:50%;left:-40px;top:-60px"></div>
+        </div>
+        <div style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:36px;align-items:center">
+          <img src="assets/contact-phone.png" alt="Telegram" style="width:100%;max-width:480px;justify-self:center;margin:-40px 0" />
+          <div>
+            <div style="font-weight:800;font-size:24px;margin-bottom:10px;color:#fff;letter-spacing:-.03em">Пока не готовы к брифу?</div>
+            <p style="margin:0 0 22px;color:#c0cbe0;font-size:15px;max-width:440px">Оставьте контакты — свяжемся сами и поможем определиться с тарифом.</p>
+          <form onSubmit="{{ onSubmit }}" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;max-width:520px">
+            <input id="name" name="name" required placeholder="Ваше имя" style="grid-column:span 1;width:100%;border:1px solid #ffffffcc;background:#ffffffe0;border-radius:10px;padding:12px;font:inherit;box-sizing:border-box;transition:border-color .2s" style-focus="border-color:#1F3A93" />
+            <input id="contact" name="contact" required placeholder="Telegram или номер телефона" style="grid-column:span 1;width:100%;border:1px solid #ffffffcc;background:#ffffffe0;border-radius:10px;padding:12px;font:inherit;box-sizing:border-box;transition:border-color .2s" style-focus="border-color:#1F3A93" />
+            <input type="hidden" name="plan" value="{{ selectedPlan }}" />
+            <div style="grid-column:1/-1;position:relative">
+              <button type="button" onClick="{{ togglePlanOpen }}" style="width:100%;text-align:left;cursor:pointer;border:1px solid #ffffffcc;background:#ffffffe0;color:#171a24;border-radius:10px;padding:12px 40px 12px 14px;font:inherit;box-sizing:border-box;transition:border-color .2s" style-focus="border-color:#1F3A93">
+                {{ selectedPlan }}
+                <span style="{{ planArrowStyle }};position:absolute;right:14px;top:50%;font-size:12px;color:#1F3A93">▾</span>
+              </button>
+              <div style="{{ planListWrapStyle }}">
+                <div style="border-radius:12px;background:#141d4d;border:1px solid #ffffff2e;box-shadow:0 16px 36px #05081f66">
+                  <sc-for list="{{ planOptions }}" as="opt" hint-placeholder-count="5">
+                    <div onClick="{{ opt.select }}" style="padding:12px 14px;font-size:14px;cursor:pointer;color:#f0f3ff;transition:background .15s" style-hover="background:#1F3A93">{{ opt.label }}</div>
+                  </sc-for>
+                </div>
+              </div>
+            </div>
+            <button type="submit" style="grid-column:1/-1;border:0;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 15px;border-radius:10px;background:linear-gradient(135deg,#2b46b0,#1F3A93);color:#fff;font-weight:750;font-size:14px;box-shadow:0 8px 20px #1f3a9333">Отправить <span>→</span></button>
+            <p style="grid-column:1/-1;font-size:11px;color:#c0cbe0;margin:2px 0 0">{{ formNote }}</p>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="border-top:1px solid #ffffffb3;padding:25px 0;color:#5b6478;font-size:13px">
+    <div style="width:min(1160px,calc(100% - 40px));margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap">
+      <span><b>SAS.</b> Smart Automation System</span>
+      <span>Регулярный контент для малого бизнеса</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedPlan: 'Нужна помощь с выбором',
+      formNote: 'Нажимая кнопку, вы соглашаетесь на обработку заявки.',
+      openFaq: null,
+      planOpen: false
+    };
+    this.planLabels = ['Нужна помощь с выбором', 'СТАРТ', 'БИЗНЕС', 'ПРЕМИУМ', 'МАКСИМУМ'];
+    this.togglePlanOpen = this.togglePlanOpen.bind(this);
+    this.faqData = [
+      { q: 'Обязательно ли смотреть видео?', a: 'Нет, но так быстрее: за пару минут видео объясняет, как всё устроено и что входит в тарифы. Вся та же информация есть и здесь на странице.' },
+      { q: 'Сколько постов согласовывается перед стартом?', a: 'На СТАРТ первые 3 поста утверждаются с вами лично, дальше публикация идёт полностью автоматически. На БИЗНЕС и выше предварительного согласования нет — правки вносятся по ходу.' },
+      { q: 'Публикуете ли вы праздничные посты?', a: 'На СТАРТ праздничных постов нет. С БИЗНЕС система сама ставит посты к главным праздникам, а на ПРЕМИУМ и МАКСИМУМ можно добавить свои памятные даты.' },
+      { q: 'Можно ли поменять рубрики после запуска?', a: 'Да, у каждого тарифа есть лимит правок в месяц — от 1 на СТАРТ до 8 на МАКСИМУМ.' },
+      { q: 'Как быстро отвечает поддержка?', a: 'От суток на СТАРТ до нескольких часов на ПРЕМИУМ. На МАКСИМУМ поддержка в приоритете.' },
+      { q: 'Можно ли сменить тариф?', a: 'Да, тариф можно повысить или понизить в любой момент — изменения вступают в силу со следующего цикла.' }
+    ];
+    this.onPlanChange = this.onPlanChange.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
+    this.heroVideoRef = React.createRef();
+  }
+
+  componentDidMount() {
+    var v = this.heroVideoRef.current;
+    if (v) {
+      v.muted = true;
+      v.loop = true;
+      v.autoplay = true;
+      v.playsInline = true;
+      var p = v.play();
+      if (p && p.catch) p.catch(function () {});
+    }
+  }
+
+  onPlanChange(e) {
+    this.setState({ selectedPlan: e.target.value });
+  }
+
+  togglePlanOpen() {
+    this.setState(function (s) { return { planOpen: !s.planOpen }; });
+  }
+
+  onSubmit(e) {
+    e.preventDefault();
+    var data = Object.fromEntries(new FormData(e.target));
+    this.setState({
+      formNote: 'Заявка подготовлена: подключите форму к вашей CRM или обработчику заявок, чтобы получать обращения. Выбрано: ' + (data.plan || this.state.selectedPlan) + '.'
+    });
+  }
+
+  renderVals() {
+    var self = this;
+    var open = this.state.openFaq;
+    var faqItems = this.faqData.map(function (it, i) {
+      var isOpen = open === i;
+      return {
+        q: it.q,
+        a: it.a,
+        toggle: function () { self.setState({ openFaq: isOpen ? null : i }); },
+        wrapStyle: 'display:grid;grid-template-rows:' + (isOpen ? '1fr' : '0fr') + ';transition:grid-template-rows .45s cubic-bezier(.22,.8,.36,1);overflow:hidden',
+        innerStyle: 'opacity:1;min-height:0'
+      };
+    });
+    var planOptions = this.planLabels.map(function (label) {
+      return { label: label, select: function () { self.setState({ selectedPlan: label, planOpen: false }); } };
+    });
+    return {
+      selectedPlan: this.state.selectedPlan,
+      onPlanChange: this.onPlanChange,
+      onSubmit: this.onSubmit,
+      heroVideoRef: this.heroVideoRef,
+      formNote: this.state.formNote,
+      faqItems: faqItems,
+      planOpen: this.state.planOpen,
+      planOptions: planOptions,
+      togglePlanOpen: this.togglePlanOpen,
+      planArrowStyle: 'transition:transform .2s;transform:' + (this.state.planOpen ? 'translateY(-50%) rotate(180deg)' : 'translateY(-50%) rotate(0deg)'),
+      planListWrapStyle: 'position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:10;overflow:hidden;pointer-events:' + (this.state.planOpen ? 'auto' : 'none') + ';visibility:' + (this.state.planOpen ? 'visible' : 'hidden') + ';max-height:' + (this.state.planOpen ? '300px' : '0') + ';opacity:' + (this.state.planOpen ? '1' : '0') + ';transform:translateY(' + (this.state.planOpen ? '0' : '-6px') + ');transition:max-height .3s cubic-bezier(.22,.8,.36,1),opacity .25s,transform .25s,visibility .25s'
+    };
+  }
+}
+</script>
+</body>
+</html>
